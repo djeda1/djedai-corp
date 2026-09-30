@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>DJEDAI CORP® — дизайн, который запоминают</title>
+  <meta name="description" content="DJEDAI CORP — дизайн-студия полного цикла: брендинг, сайты, моушн и 3D. От идеи до запуска." />
+  <meta name="theme-color" content="#dde3d5" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+  <script type="module" crossorigin src="./assets/index-BIS6k-0C.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-BSNbn6Uv.js">
+  <link rel="modulepreload" crossorigin href="./assets/vendor-_Rv-lNFY.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-N7Ff_5bf.css">
+</head>
+<body class="is-intro">
+  <canvas id="gl" aria-hidden="true"></canvas>
+
+  <!-- ─────────── intro ─────────── -->
+  <div class="intro" id="intro">
+    <div class="intro__center">
+      <div class="eyes" id="intro-eyes" aria-hidden="true"></div>
+      <div class="intro__bar" aria-hidden="true"><i id="intro-progress"></i></div>
+      <p class="intro__title" data-intro>DJEDAI CORP<sup>®</sup></p>
+      <p class="intro__text" data-intro>Дизайн, который запоминают. Брендинг, сайты, моушн и&nbsp;3D&nbsp;— от&nbsp;идеи до&nbsp;запуска.</p>
+      <button class="pill pill--white intro__enter" data-intro data-enter="sound" disabled>
+        <span>Войти</span>
+        <svg class="arrow" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2l8 8M10 3.5V10H3.5" /></svg>
+      </button>
+    </div>
+    <button class="intro__mute" data-intro data-enter="mute" disabled>Войти без звука</button>
+    <span class="intro__count" id="intro-count" aria-hidden="true">0</span>
+  </div>
+
+  <!-- ─────────── header ─────────── -->
+  <header class="header">
+    <a class="logo" href="#/" aria-label="DJEDAI CORP — на главную" data-hover>
+      <span class="logo__a">djedai</span><span class="logo__b">corp</span><sup>®</sup>
+    </a>
+    <nav class="header__nav" aria-label="Основная навигация">
+      <a href="#/" data-nav="index" data-hover>Главная</a>
+      <a href="#/projects" data-nav="projects" data-hover>Проекты</a>
+      <a href="#/about" data-nav="about" data-hover>О нас</a>
+      <a href="#/contact" data-nav="contact" data-hover>Контакты</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu" data-hover>
+      <i class="menu-btn__eye"></i><i class="menu-btn__eye"></i>
+    </button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <!-- ─────────── dock ─────────── -->
+  <div class="dock">
+    <div class="dock__left">
+      <button class="sound-btn" id="sound-btn" aria-label="Включить звук" aria-pressed="false" data-hover>
+        <i></i><i></i><i></i><i></i>
+      </button>
+      <a class="pill pill--ghost dock__status" href="#/contact" data-hover>
+        <i class="dot"></i><span>Открыты для проектов</span>
+      </a>
+    </div>
+    <a class="world" id="world-toggle" href="#/world" aria-label="Переключиться в DJEDAI WORLD" data-hover>
+      <span class="world__a">Corp</span>
+      <span class="world__track"><i class="world__knob">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="3.6" ry="8.5"/><path d="M3.5 12h17M5 7.5h14M5 16.5h14"/></svg>
+      </i></span>
+      <span class="world__b">World</span>
+    </a>
+    <span class="dock__copy">©2026</span>
+  </div>
+
+  <!-- ─────────── menu ─────────── -->
+  <aside class="menu" id="menu" aria-hidden="true">
+    <div class="menu__scrim" data-close></div>
+    <div class="menu__panel" role="dialog" aria-label="Меню">
+      <button class="menu__close" data-close aria-label="Закрыть меню" data-hover>
+        <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12" /></svg>
+      </button>
+      <nav class="menu__nav">
+        <a href="#/" data-nav="index" data-hover><sup>01</sup><span>Главная</span></a>
+        <a href="#/projects" data-nav="projects" data-hover><sup>02</sup><span>Проекты</span></a>
+        <a href="#/about" data-nav="about" data-hover><sup>03</sup><span>О нас</span></a>
+        <a href="#/contact" data-nav="contact" data-hover><sup>04</sup><span>Контакты</span></a>
+        <a href="#/world" data-nav="world" data-hover><sup>05</sup><span>Мир</span>
+          <svg class="menu__globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><ellipse cx="12" cy="12" rx="3.6" ry="8.5"/><path d="M3.5 12h17M5 7.5h14M5 16.5h14"/></svg>
+        </a>
+      </nav>
+      <div class="menu__foot">
+        <div class="menu__contacts" id="menu-contacts"></div>
+        <ul class="menu__socials" id="menu-socials"></ul>
+      </div>
+    </div>
+  </aside>
+
+  <div class="cursor" aria-hidden="true"><i class="cursor__ring"></i><span class="cursor__label"></span></div>
+
+  <noscript><p class="noscript">Для этого сайта нужен JavaScript.</p></noscript>
+</body>
+</html>
